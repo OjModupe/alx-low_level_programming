@@ -12,9 +12,9 @@
  */
 int main(void)
 {
-    int n; /* Variable declaration */
+  int n; /* Variable declaration */
 
-    srand(time(0));
+  srand(time(0));
     n = rand() - RAND_MAX / 2;
 
     /* Determine and print the sign of n */
