@@ -5,32 +5,26 @@
 /**
  * main - Entry point
  *
- * Description: This program generates a random number and
- * then determines the last digit of that number.
- *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int n;
-    int lastnum;
+	int n, last;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-    lastnum = n % 10;
-
-    if (lastnum > 5)
-    {
-        printf("Last digit of %d is %d and is greater than 5\n", n, lastnum);
-    }
-    else if (lastnum == 0)
-    {
-        printf("Last digit of %d is %d and is 0\n", n, lastnum);
-    }
-    else if (lastnum < 6 && lastnum != 0)
-    {
-        printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastnum);
-    }
-
-    return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	last = n % 10;
+	if (last > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, last);
+	}
+	else if (last < 6 && last != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is 0\n", n, last);
+	}
+	return (0);
 }
