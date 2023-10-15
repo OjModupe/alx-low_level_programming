@@ -3,20 +3,16 @@
 /**
  * main - Entry point
  *
- * Description: Prints numbers from 0 to 9, followed by a newline.
- *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int num = 0;
+	int i;
 
-    while (num < 10)
-    {
-        printf("%d", num);
-        num++; // Increment the value of num by 1
-    }
-
-    printf("\n");
-    return (0);
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
+	putchar(10);
+	return (0);
 }
