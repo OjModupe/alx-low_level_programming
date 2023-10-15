@@ -1,23 +1,22 @@
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * main - Entry point
- *
- * Description: Prints lowercase letters from 'a' to 'z'
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int lowerCase = 'a';
+	char c;
+	int i;
 
-    while (lowerCase <= 'z')
-    {
-        putchar(lowerCase);
-        lowerCase += 1;
-    }
-
-    putchar('\n');
-    return (0);
+	i = 0;
+	c = 'a';
+	while (i < 26)
+	{
+		putchar(c + i);
+		i++;
+	}
+	putchar(10);
+	return (0);
 }
