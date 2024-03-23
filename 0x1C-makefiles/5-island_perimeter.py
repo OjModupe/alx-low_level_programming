@@ -13,10 +13,9 @@ def island_perimeter(grid):
         1 represents a land zone
         One cell is a square with side length 1
         Grid cells are connected horizontally/vertically
-        Grid is rectangular, width and height don't exceed 100
-    Grid is compltely surrounded by water, and there is one island
+        Grid is rectangular, width and height don’t exceed 100
+    Grid is completely surrounded by water, and there is one island
     """
-
     width = len(grid[0])
     height = len(grid)
     grid_edges = 0
@@ -30,5 +29,4 @@ def island_perimeter(grid):
                     grid_edges += 1
                 if (m > 0 and grid[m - 1][n] == 1):
                     grid_edges += 1
-         return (grid_size * 4 - grid_edges * 2)
-
+    return (grid_size * 4 - grid_edges * 2)
